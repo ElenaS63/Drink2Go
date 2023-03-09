@@ -1,0 +1,28 @@
+.navigation__menu {
+  position: absolute;
+  right: 60px;
+  top: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .navigation {
+    display: flex;
+  }
+
+  .navigation__links-container {
+    order: 1;
+    margin-right: 61px;
+  }
+
+  .navigation__menu {
+    position: relative;
+    order: 2;
+    right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation__links-container {
+    margin-right: 163px;
+  }
+}

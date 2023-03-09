@@ -1,0 +1,146 @@
+.advantages {
+  text-align: center;
+  padding: 50px 20px 60px;
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #7859cf;
+}
+
+.advantages__promo {
+  margin: 0;
+  margin-bottom: 36px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.advantages__item {
+  padding-top: 66px;
+  margin-bottom: 32px;
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 52px;
+    height: 56px;
+    top: 0;
+    left: 114px;
+  }
+
+  &--speed::before {
+    background-image: url("../../img/icons/stack.svg#speed");
+  }
+
+  &--convenience::before {
+    background-image: url("../../img/icons/stack.svg#convenience");
+  }
+
+  &--cheerfulness::before {
+    background-image: url("../../img/icons/stack.svg#cheerfulness");
+  }
+
+  &--eco::before {
+    background-image: url("../../img/icons/stack.svg#eco");
+  }
+}
+
+.advantages__item-title {
+  margin: 0;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.advantages__description {
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    padding: 60px 30px 100px;
+  }
+
+  .advantages__title {
+    letter-spacing: 0.5px;
+  }
+
+  .advantages__promo {
+    margin-bottom: 60px;
+    font-size: 42px;
+    line-height: 64px;
+  }
+
+  .advantages__list {
+    display: grid;
+    grid-template-columns: repeat(2, 340px);
+    column-gap: 30px;
+    row-gap: 50px;
+    text-align: start;
+  }
+
+  .advantages__item {
+    margin: 0;
+    padding: 0;
+    padding-left: 71px;
+
+    &::before {
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .advantages__item-title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .advantages__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    padding: 100px 40px 118px;
+  }
+
+  .advantages__promo {
+    margin-bottom: 80px;
+  }
+
+  .advantages__list {
+    display: grid;
+    grid-template-columns: repeat(4, 318px);
+  }
+
+  .advantages__item {
+    padding: 0;
+    padding-top: 76px;
+    text-align: center;
+
+    &::before {
+      left: 42%;
+    }
+  }
+}

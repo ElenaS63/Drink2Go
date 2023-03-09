@@ -1,0 +1,39 @@
+.header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border-bottom: 1px solid #f0ebff;
+}
+
+.header__logo-container {
+  display: flex;
+  margin: 0;
+  padding: 12px 20px 8px;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    width: 768px;
+    margin: 0 auto;
+    flex-direction: row;
+  }
+
+  .header__logo-container {
+    padding: 0 20px;
+    margin-right: 47px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    width: 1440px;
+  }
+
+  .header__logo-container {
+    padding: 0 40px;
+    margin-right: 100px;
+  }
+}

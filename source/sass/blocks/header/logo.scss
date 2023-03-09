@@ -1,0 +1,62 @@
+.logo:hover,
+.logo:focus {
+  outline: none;
+  opacity: 0.7;
+}
+
+.logo:hover .logo__text,
+.logo:focus .logo__text {
+  color: #9070ec;
+}
+
+.logo:active .logo__text {
+  color: #593cac;
+}
+
+.logo__icon--tablet,
+.logo__icon--desktop {
+  display: none;
+}
+
+.logo__text {
+  display: none;
+  color: #333333;
+}
+
+@media (max-width: $mobile-width-only) {
+  .logo {
+    width: 100px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .logo__icon--moble {
+    display: none;
+  }
+
+  .logo__icon--tablet {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo {
+    display: flex;
+  }
+
+  .logo__icon--tablet {
+    display: none;
+  }
+
+  .logo__icon--desktop {
+    display: block;
+  }
+
+  .logo__text {
+    display: block;
+    width: 147px;
+    margin-left: 20px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
